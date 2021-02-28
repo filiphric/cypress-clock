@@ -6,12 +6,12 @@ let tInterval;
 
 function startTimer() {
   startTime = new Date().getTime();
-  tInterval = setInterval(getShowTime, 1000);
+  tInterval = setInterval(updateTime, 1000);
 }
 
 startTimer()
 
-function getShowTime(){
+function updateTime(){
   updatedTime = new Date().getTime();
   difference =  updatedTime - startTime;
 
